@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Education Project cost account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+    <div class="wrap-static">
+      <h1>Учет моих расходов</h1>
+      <div class="cost-fields">
+        <div class="cost-fields-buy">
+          <p>Куда было потрачено:</p>
+          <input type="text" id="buy" placeholder="Куда было потрачено">
+        </div>
+        <div class="cost-fields-price">
+          <p>Сколько было потрачено:</p>
+          <input type="number" id="cost" placeholder="Сколько было потрачено">
+        </div>
+        <button onclick="onClickAdd()" class="button-add" id="add">Добавить</button>
+      </div>
+      <h3 id="total-account">Итого: <span id="total-sum"></span></h3>
+    </div>
+
+    <div class="content-container">
+
+      <div id="content-page"></div>
+    </div>
+  </main>
+
+</body>
+
+</html>
